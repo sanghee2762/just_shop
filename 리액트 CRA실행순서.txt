@@ -1,0 +1,95 @@
+
+
+
+
+
+
+리액트 CRA
+1. 리액트CRA 프로젝트 앱(application)만들기(create-react-app)
+npx create-react-app just_shop
+
+2. 리액트만들고 cd just_shop 경로이동
+
+3. sass 설치하기
+   npm i sass
+
+//////////////////////////////////////////////////////////
+
+4. 패키지 제이슨 파일 열고 설치파일 확인한다.
+   package.json
+  
+    "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "sass": "^1.56.1",   <== 설치확인
+    "web-vitals": "^2.1.4"
+  },
+
+  5. public 폴더열고 파일 정리 삭제
+    css
+    js
+    img
+    index.html
+
+  6. index.html - 헤더영역에 환경설정  public 폴더
+   * head 영역 설정내용들 - 사용언어: ko, 파비콘이미지경로: ./images, 
+                           타이틀, 스타일지정: <link...>
+                           제이쿼리 오픈스크립트
+                           바벨 오픈스크립트
+
+   *body 영역 설정 -  돔 컨테이너 설정 #root 
+                     jQuery 스크립트 사용자파일
+                     타입설정 type="text/babel"
+                     <script type="text/babel" src="./script/script.js"></script>
+
+  7. src : 컴포넌트.js , 인덱스.js , 스타일.css, 스타일.scss 등 환경설정 구성하기
+    - **index.js는 리액트에서 정해진 이름이고 반드시 필요한 파일입니다.
+
+    - 불필요한 파일 모두 삭제정리 (index.js 를 제외한 모든 불필요한 파일 모두 삭제 정리)
+
+    - index.js 내부소스 정리하기 
+    - 아래와 같이 남기고 나머지 모두 삭제하기
+     ==> 
+
+        import React from 'react';
+        import ReactDOM from 'react-dom/client';
+
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(
+
+        );
+
+  8. 컴포넌트 폴더 만들기 
+  9. 컴포넌트.js 만들기
+    - 앱(app)구성 모든 components 만들기 (컴포넌트)
+      폴더이름 : components - WrapComponent.js
+                            - HeaderComponent.js
+                            - MainComponent.js  ->  Section1Component.js
+                                                ->  Section2Component.js
+                                                ->  Section3Component.js
+                                                ->  Section4Component.js
+                                                ->  Section5Component.js
+                                                                            
+                            - FooterComponent.js
+                            - ModalComponent.js
+ 
+  10. 모든 컴포넌트 : 프롭스와 상태관리 기본 프롭스 모두 붙여 넣기
+
+ 
+
+
+
+*고라이브 하고 화면출력이안될때 : 노드 모듈 형성이 덜되서 
+
+  npm i      다시설치하고
+
+  npm start   시작하기
+
+    
+/////////////////////////////////////////////////////////
+

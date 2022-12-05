@@ -1,0 +1,49 @@
+JSX 수정내용
+컴포넌트 내의 수정내용
+
+class =>  className
+img => <img />
+
+{/*find 자식요소 검색*/}   shift + Alt + a 리액트 주석 처리ㄴ
+
+
+      // 1. function HeaderComponent(props){ 
+
+      // 2. 프롭스를 중괄호를 사용 직접 비구조화 
+      //   function HeaderComponent({homePath,logoTitle,imgSrc,imgAlt}){  
+
+
+      // 3. 프롭스로 내려박아서 비구조화 등록 (안에 내용이많아지면 이렇게해주는게 좋음)
+       function HeaderComponent(props){ 
+
+            const {homePath,logoTitle,imgSrc,imgAlt} = props;   
+
+            // // 상태관리 React.useState() -> 함수형 컴포넌트에 유명 (핵심)
+            const[addClass, setAddClass] = React.useState(false);  // addClass실제사용 (true/false)가지고있음  setAddClass 상태변수를 바꿔주는 변수
+              
+            // // 상태관리 변수, addClass를 마우스가 클릭하면  true상태변경
+            // // const onClickAddClass =()=>{}   시작
+            // const onClickAddClass =(e)=>{
+            //     e.preventDefault();
+            //     alert('클릭!!!!');
+            //     setAddClass(true); //상태변경,  setAddClass 얘가 변경시켜줌
+            // }
+
+            // //상태관리변수 addClass 를 마우스 클릭하면 false상태변경
+            // const onClickAddClass2 = (e)=>{
+            //   e.preventDefault();
+            //   alert('클릭2!!!!');
+            //   setAddClass(false); //상태변경
+            // }
+
+
+            // 메인버튼에 마우스 올리면(onMouseEenter) addClass 를 true 상태변경  ( 화살표함수앞에는 const )
+            const onMouseEnterAddClass =(e)=>{ 
+               e.preventDefault();
+               setAddClass(true);
+            }
+            // nav를 마우스가 떠나면(onMouseleave) addClass를 false 로 상태변경
+            const onMouseLeaveAddCalss =(e)=>{
+               e.preventDefault();
+               setAddClass(false);
+            }
