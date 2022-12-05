@@ -83,8 +83,43 @@ git remote -v
 git remote add origin https://github.com/sanghee2762/just_shop.git
 
 ///////////////////////////////////////////////////////////////
+
 9. 스테이징 하기
+
 모든(All = . ) 파일 스테이징 ==>  git add .
+
+///////////////////////////////////////////////////////////////
+
+10. 커밋 하기 (내가 올릴파일과 이상없는지 최종점검)
+(깃 커밋 메세지( message = -m ) )
+
+git commit -m '리액트 create-react-app just_shop'
+
+////////////////////////////////////////////////////////
+
+푸쉬 (push)  하기 (마스터)
+git push origin master
+
+
+$ git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 48, done.
+Counting objects: 100% (48/48), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (48/48), done.
+Writing objects: 100% (48/48), 1.36 MiB | 3.22 MiB/s, done.
+Total 48 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sanghee2762/just_shop.git
+ * [new branch]      master -> master
+
+//////////////////////////////////////////////////////////
+  < 수정파일이 생겼을때 >
+   웹페이지 / 파일수정
+
+==> 스테이징부터 다시 
+1) git add .
+2) git commit -m '리액트 create-react-app just_shop 확장자 js => jsx 수정'
+3) git push origin master
 
 
 
