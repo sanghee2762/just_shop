@@ -121,6 +121,22 @@ To https://github.com/sanghee2762/just_shop.git
 2) git commit -m '리액트 create-react-app just_shop 확장자 js => jsx 수정'
 3) git push origin master
 
+////////////////////////////////////////////////////////////////
+배포하기(페이징)
+
+1) 상단메뉴 settings 클릭
+2) 좌측 중간 하단에 pages 메뉴클릭
+3) 상단 GitHub Pages
+4) Branch
+   GitHub Pages is currently disabled. Select a source below to enable GitHub Pages for this repository. Learn more.
+
+   None /  Save
+
+None 클릭 -> 목록상자 master 선택 -> 우측 save 클릭 -> 새로고침(f5) ->  
+
+
+
+
 
 
 (화면청소명령어)
